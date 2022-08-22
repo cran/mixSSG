@@ -1,0 +1,16 @@
+b42f69bc2861c77bc1013d4c2f7c1f18 *DESCRIPTION
+286b16a0cd343ea6776678860f39f4ab *NAMESPACE
+5e8864a88d5ec97c9cf05fa1348cf11e *R/dssg.R
+6297a46ca5ba0fa9da8e94c6160a8e84 *R/fitmixssg.R
+3e7a2aa3f3988cb31f94847ff0f966ab *R/rpstable.R
+10b8607be423f5189c510edb2357ce3f *R/rssg.R
+f8e446a4b02c96237c37c43f17ee5606 *R/stoch.R
+da8749047e89ef6a33fb5f99d0f9379a *data/AIS.txt.gz
+4f58caa53e106b4f8ecbafd043b6501e *data/bankruptcy.txt.gz
+5442a91dd6375851c5751b5a247de701 *man/AIS.Rd
+1ce67f0acb615f8ac22771ead9d20915 *man/bankruptcy.Rd
+545ebfdcdf1a5a3d6ed65988483923b5 *man/dssg.Rd
+15435c6b89ab75cf822c3ea941f1dcf0 *man/fitmssg.Rd
+91e10183ad958f022d65529f134cb200 *man/rpstable.Rd
+c824633764e7a53fc73654711fb16c69 *man/rssg.Rd
+9422d8d8c73693dc8efca5675552ce35 *man/stoch.Rd

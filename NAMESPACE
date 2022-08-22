@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+importFrom(utils,packageVersion)
+importFrom("MASS","mvrnorm")
+importFrom("ars","ars")
+importFrom("rootSolve","uniroot.all")
+importFrom("stats", "var", "rexp", "pgamma", "runif", "mahalanobis", "pnorm", "optimize", "kmeans", "dnorm")
+importFrom("stats", "pt", "rnorm", "na.omit", "uniroot", "qnorm", "optim", "median", "quantile", "cov", "lm")
