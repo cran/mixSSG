@@ -8,7 +8,7 @@ The set of AIS data involves recorded body factors of 202 athletes including 100
 \format{A text file with 3 columns.}
 \encoding{latin1}
 \references{
-R. D. Cook and S. Weisberg, (2009).\emph{An Introduction to Regression Graphics}, John Wiley & Sons, New York.
+R. D. Cook and S. Weisberg, (2009). \emph{An Introduction to Regression Graphics}, John Wiley & Sons, New York.
 }
 \keyword{datasets}
 \examples{

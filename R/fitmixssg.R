@@ -127,14 +127,22 @@ fitmssg <- function(Y, K, eps = 0.15, initial = "FALSE", method="moment", starts
 mixing proportions must be one.", call. = FALSE)
 			if( any( is.nan( starts[[2]] ) ) || any( starts[[2]] == Inf) || any( is.na( starts[[2]] ) ) || any( starts[[2]] <= 0 ) || any(
 starts[[2]] > 2 ) ) stop("The tail index must be in (0, 2].", call. = FALSE)
-				for(k in 1:K)
-				{
-					omega.hat[1, k] <- starts[[1]][k]
-					alpha.hat[1, k] <- starts[[2]][k]
-					Mu.hat[, k, 1]  <- starts[[3 + 3*(k - 1) ]]
-					Sigma.hat[, ( (k-1)*Dim + 1 ):(k*Dim), 1] <- starts[[4 + 3*(k - 1) ]]
-					Lambda.hat[, k , 1] <- starts[[5 + 3*(k - 1)]]
-				}
+				#for(k in 1:K)
+				#{
+				#	omega.hat[1, k] <- starts[[1]][k]
+				#	alpha.hat[1, k] <- starts[[2]][k]
+				#	Mu.hat[, k, 1]  <- starts[[3 + 3*(k - 1) ]]
+				#	Sigma.hat[, ( (k-1)*Dim + 1 ):(k*Dim), 1] <- starts[[4 + 3*(k - 1) ]]
+				#	Lambda.hat[, k , 1] <- starts[[5 + 3*(k - 1)]]
+				#}
+		    for(k in 1:K)
+		    {
+		      omega.hat[1, k]    <- starts[[1]][[k]]
+		      alpha.hat[1, k]    <- starts[[2]][[k]]
+		      Mu.hat[, k, 1]     <- starts[[3]][k, ]
+		      Sigma.hat[, , 1]   <- starts[[4]][, , k]
+		      Lambda.hat[, k, 1] <- starts[[5]][k, ]
+		    }
 		}
   r <- 2
 cri <- 0.5
